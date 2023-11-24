@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>equação do segundo grau</title>
+    <link rel="stylesheet" href="./css/principal.css">
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <select onchange="muda_sinal_a()" id="sinal_a" >
+        <option selected value="+">+</option>
+        <option value="-">-</option>
+    </select>
+    <input onchange="set_valor_a()" class="entrada" type="number" id="valor_a">
+    x<sup>2</sup>
+
+    <select onchange="muda_sinal_b()" id="sinal_b" >
+        <option selected value="+">+</option>
+        <option value="-">-</option>
+    </select>
+    <input onchange="set_valor_b()" class="entrada" type="number" id="valor_b">
+    x
+
+    <select onchange="muda_sinal_c()" id="sinal_c" >
+        <option selected value="+">+</option>
+        <option value="-">-</option>
+    </select>
+    <input onchange="set_valor_c()" class="entrada" type="number" id="valor_c">
+    =0 <br></br>
+    &Delta; = <span id="delta"></span>
+</body>
+</html>
